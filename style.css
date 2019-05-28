@@ -5,11 +5,16 @@
 
 html {
     font-size: 62.5%;
+    font-family: 'Arial', 'sans-serif';
 }
 
 .title {
-    font-family: 'Impact', 'sans-serif';
-    margin: 5rem 0 0 0;
+    margin: 3rem 0 0 0;
+    font-weight: 900;
+    font-size: 5rem;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    width: 60%;
 }
 
 .title,
@@ -19,17 +24,15 @@ html {
     text-align: center;
 }
 
-.info,
-.generate {
-    font-family: 'arial', 'sans-serif';
-    font-size: 2rem;
-    letter-spacing: 0.2rem;
+a {
+    text-decoration: none;
+    color: royalblue;
 }
 
-.title {
-    font-size: 5rem;
+.info,
+.generate {
+    font-size: 2rem;
     letter-spacing: 0.2rem;
-    text-align: center;
 }
 
 body {
@@ -90,12 +93,12 @@ button {
 
 @media (max-width: 1025px) {
     .title {
-        font-size: 2.5rem;
-        font-weight: lighter;
+        font-size: 2.3rem;
+        width: 100%;
     }
 
     .info {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         margin: 1rem 0 0 0;
     }
 
