@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+h1,
+p {
+    color: white;
+    text-align: center;
+    font-family: 'arial'
+}
+
+h1 {
+    font-size: 5rem;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    font-family: 'impact'
+}
+
+p {
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: black;
+}
+
+div {
+    position: relative;
+    width: fit-content;
+}
+
+img {
+    max-width: 100%;
+    margin: 1rem 0 0 0;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border: none;
+    width: 6rem;
+    height: 5rem;
+    margin: 2rem 0 2rem 0;
+}
+
+button img {
+    width: 4rem;
+    height: 4rem;
+    margin: 0 0 0 0;
+    cursor: pointer;
+}
+
+.generate {
+    position: absolute;
+    font-weight: 800;
+    font-family: 'arial';
+    bottom: 2rem;
+    padding: 0 0.5rem 0 0.5rem;
+    text-shadow: -0.1rem -0.1rem 0 black, 0.1rem -0.1rem 0 black, -0.1rem 0.1rem 0 black, 0.1rem 0.1rem 0 black;
+}
+
+.rotate {
+    animation: rotate 0.3s linear;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 1025px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+        margin: 1rem 0 0 0;
+    }
+
+    .generate {
+        font-size: 1.4rem;
+    }
+
+    img {
+        margin: 3rem 0 0 0;
+    }
+}
