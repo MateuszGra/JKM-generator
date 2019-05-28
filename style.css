@@ -7,11 +7,6 @@ html {
     font-size: 62.5%;
 }
 
-@font-face {
-    font-family: 'Impact';
-    src: url('font/impact.eot');
-}
-
 .title {
     font-family: 'Impact', 'sans-serif';
     margin: 5rem 0 0 0;
@@ -35,7 +30,6 @@ html {
     font-size: 5rem;
     letter-spacing: 0.2rem;
     text-align: center;
-    font-family: 'impact'
 }
 
 body {
