@@ -7,23 +7,30 @@ html {
     font-size: 62.5%;
 }
 
-h1,
-p {
-    color: white;
-    text-align: center;
-    font-family: 'arial'
+.title {
+    font-family: 'Impact', 'sans-serif';
+    margin: 5rem 0 0 0;
 }
 
-h1 {
+.title,
+.info,
+.generate {
+    color: white;
+    text-align: center;
+}
+
+.info,
+.generate {
+    font-family: 'arial', 'sans-serif';
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+}
+
+.title {
     font-size: 5rem;
     letter-spacing: 0.2rem;
     text-align: center;
     font-family: 'impact'
-}
-
-p {
-    font-size: 2rem;
-    letter-spacing: 0.2rem;
 }
 
 body {
@@ -33,14 +40,14 @@ body {
     background: black;
 }
 
-div {
+.wrapper {
     position: relative;
     width: fit-content;
 }
 
 img {
     max-width: 100%;
-    margin: 1rem 0 0 0;
+    margin: 4.5rem 0 0 0;
 }
 
 button {
@@ -48,13 +55,12 @@ button {
     justify-content: center;
     align-items: center;
     background: white;
-    border: none;
-    width: 6rem;
-    height: 5rem;
+    width: 7.5rem;
+    height: 6rem;
     margin: 2rem 0 2rem 0;
 }
 
-button img {
+.imgButton {
     width: 4rem;
     height: 4rem;
     margin: 0 0 0 0;
@@ -84,11 +90,12 @@ button img {
 }
 
 @media (max-width: 1025px) {
-    h1 {
+    .title {
         font-size: 2.5rem;
+        font-weight: lighter;
     }
 
-    p {
+    .info {
         font-size: 1.2rem;
         margin: 1rem 0 0 0;
     }
@@ -97,7 +104,8 @@ button img {
         font-size: 1.4rem;
     }
 
-    img {
-        margin: 3rem 0 0 0;
+    .info,
+    .generate {
+        letter-spacing: 0rem;
     }
 }
